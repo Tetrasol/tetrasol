@@ -9,6 +9,7 @@
     "structure": "module-only",
     "style": "less",
     "testFramework": "jasmine",
-    "testScript": "js"
+    "testScript": "js",
+    "lastUsedModule": "app"
   }
 }

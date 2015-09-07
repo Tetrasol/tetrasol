@@ -1,9 +1,9 @@
 md-content
   md-toolbar
     div.md-toolbar-tools
-      md-button(aria-label="Settings").md-icon-button
-        i.fa.fa-bars
-      h2 Tetrahedron Solutions
+      md-button(aria-label="Settings" ng-click="header.navbarToggle()" hide-gt-sm).md-icon-button
+        md-icon.fa.fa-bars
+      h2 {{ header.name }}
       span(flex)
       md-button.md-icon-button
-        md-icon(md-svg-icon="im/icons/more_vert.svg")
+        md-icon.fa.fa-ellipsis-v

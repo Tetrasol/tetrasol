@@ -28,9 +28,13 @@
       templateUrl: '/tsol-header/header-directive.tpl.html',
       replace: false,
       controllerAs: 'header',
-      controller: function () {
+      controller: function ($mdSidenav) {
         var vm = this;
-        vm.name = 'header';
+        vm.navbarToggle = function(){
+
+          $mdSidenav("left").toggle();
+        }
+        vm.name = 'Tetrahedron Solutions';
       },
       link: function (scope, element, attrs) {
       }

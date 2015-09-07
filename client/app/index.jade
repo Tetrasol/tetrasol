@@ -1,7 +1,7 @@
 doctype html
 html(lang='en' data-ng-app='client')
   head
-    title client
+    title Tetrahedron Solutions
     meta(name='viewport' content='width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes')
     |<!-- inject:head:js -->
     |<!-- endinject -->
@@ -13,8 +13,10 @@ html(lang='en' data-ng-app='client')
     |<!-- endinject -->
   body
     header
+    section(layout="row" flex)
+      navbar
 
-    div(data-ui-view)
+      md-content(flex layout-padding data-ui-view)
 
     |<!-- bower:js -->
     |<!-- endbower -->
