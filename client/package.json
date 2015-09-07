@@ -4,6 +4,10 @@
   "scripts": {
     "test": "gulp test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:moderndev/develop.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.2.3",
