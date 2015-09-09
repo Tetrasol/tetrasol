@@ -12,6 +12,6 @@
       .primaryPalette('red')
       .accentPalette('red')
       .warnPalette('red')
-      .backgroundPalette('yellow');
+      .backgroundPalette('grey');
   }
 }());

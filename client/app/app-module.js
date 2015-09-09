@@ -10,6 +10,7 @@
     .module('client', [
       'ngMaterial',
       'ui.router',
-      'home'
+      'home',
+      'contributions'
     ]);
 }());
