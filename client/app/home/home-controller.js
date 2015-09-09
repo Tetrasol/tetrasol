@@ -14,6 +14,8 @@
 
   function HomeCtrl() {
     var vm = this;
-    vm.ctrlName = 'HomeCtrl';
+    vm.content = {
+      name: "Welcome To Tetrahedron Solutions"
+    };
   }
 }());

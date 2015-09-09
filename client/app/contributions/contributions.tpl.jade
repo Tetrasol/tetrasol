@@ -1,0 +1,9 @@
+div(layout="row" layout-align="center center")
+  h2.md-display-3 {{contributions.contributions.name}}
+
+div(layout="row" layout-wrap)
+  md-card(flex="30" ng-repeat="card in contributions.contributions.contribution").left
+    img(ng-src="{{card.imageUrl}}")
+    md-card-content
+      h2 {{card.vendor}}
+      p {{card.description}}

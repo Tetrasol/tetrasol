@@ -44,6 +44,10 @@
             state: "contributer"
           },
           {
+            link: "Contributions",
+            state: "contributions"
+          },
+          {
             link: "About Us",
             state: "about-us"
           }
