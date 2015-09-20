@@ -12,15 +12,11 @@
     .module('contributers')
     .controller('ContributersCtrl', ContributersCtrl);
 
-  function ContributersCtrl() {
+  function ContributersCtrl($http) {
     var vm = this;
-    vm.contributers = [
-      {
-        name: 'German A. Rivera De La Torre',
-        role: 'Software Engineer',
-        avatar: 'https://avatars0.githubusercontent.com/u/4713614?v=3&s=460',
-        github: 'https://github.com/gerrive'
-      }
-    ];
+    $http.get('https://api.github.com/orgs/TetrahedronSolutions/members')
+      .then(function (response) {
+        vm.contributers = response.data;
+      });
   }
 }());

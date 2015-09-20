@@ -12,8 +12,12 @@
     .module('projects')
     .controller('ProjectsCtrl', ProjectsCtrl);
 
-  function ProjectsCtrl() {
+  function ProjectsCtrl($http) {
     var vm = this;
     vm.ctrlName = 'ProjectsCtrl';
+    $http.get('https://api.github.com/orgs/TetrahedronSolutions/repos')
+      .then(function (response) {
+        vm.projects = response.data;
+      });
   }
 }());

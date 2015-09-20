@@ -31,10 +31,10 @@
       controller: function () {
         var vm = this;
         vm.links = [
-          {
-            link: 'Home',
-            state: 'home'
-          },
+          //{
+          //  link: 'Home',
+          //  state: 'home'
+          //},
           {
             link: 'Projects',
             state: 'projects'
