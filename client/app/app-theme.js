@@ -7,7 +7,6 @@
   angular.module('client').config(themes);
 
   function themes($mdThemingProvider) {
-
     $mdThemingProvider.theme('default')
       .primaryPalette('red')
       .accentPalette('red')

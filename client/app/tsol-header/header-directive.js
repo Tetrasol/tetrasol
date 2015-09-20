@@ -30,13 +30,12 @@
       controllerAs: 'header',
       controller: function ($mdSidenav) {
         var vm = this;
-        vm.navbarToggle = function(){
-
-          $mdSidenav("left").toggle();
-        }
+        vm.navbarToggle = function () {
+          $mdSidenav('left').toggle();
+        };
         vm.name = 'Tetrahedron Solutions';
       },
-      link: function (scope, element, attrs) {
+      link: function () {
       }
     };
   }

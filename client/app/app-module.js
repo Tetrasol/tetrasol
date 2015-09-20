@@ -11,6 +11,9 @@
       'ngMaterial',
       'ui.router',
       'home',
-      'contributions'
+      'contributions',
+      'contributers',
+      'aboutUs',
+      'projects'
     ]);
 }());
