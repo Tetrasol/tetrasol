@@ -1,10 +1,9 @@
-md-content
-  md-toolbar
-    div.md-toolbar-tools
-      md-button(aria-label="Settings" ng-click="header.navbarToggle()" hide-gt-sm).md-icon-button
-        md-icon.fa.fa-bars
-      img(src="../images/tsol-image.png").header-logo
-      h1 {{ header.name }}
-      span(flex)
-      md-button.md-icon-button
-        md-icon.fa.fa-ellipsis-v
+md-sidenav(md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4" md-disable-backdrop )
+  md-toolbar(layout-align="center center")
+    h1.md-toolbar-tools Tetrasol
+    img(src="../images/tsol-image.png").header-logo
+  md-content(layout="column" layout-padding)
+    a(flex="25" ui-sref="projects").no-underline.fa.fa-github Projects
+    a(flex="25" ui-sref="contributers").no-underline.fa.fa-users Hall of Fame
+    a(flex="25" ui-sref="blog").no-underline.fa.fa-newspaper-o Projects
+    a(flex="25" ui-sref="about-us").no-underline.fa.fa-home About-us
