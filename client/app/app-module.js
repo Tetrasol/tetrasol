@@ -10,10 +10,9 @@
     .module('client', [
       'ngMaterial',
       'ui.router',
-      'home',
+      'aboutUs',
       'contributions',
       'contributers',
-      'aboutUs',
       'projects'
     ]);
 }());

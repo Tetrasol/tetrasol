@@ -31,12 +31,6 @@
           imageUrl: 'http://www.angelafloydschools.com/wp-content/uploads/placeholder-car1.png',
           description: 'Organization that manages distribution of knowledge.',
           link: 'https://github.com/ModernDev/moderndev-portal'
-        },
-        {
-          vendor: 'ng-poly',
-          imageUrl: 'http://www.angelafloydschools.com/wp-content/uploads/placeholder-car1.png',
-          description: 'yeoman.io generator created by Dustin Specker',
-          link: 'https://github.com/dustinspecker/generator-ng-poly'
         }
       ]
     };

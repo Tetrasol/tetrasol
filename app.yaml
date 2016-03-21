@@ -1,18 +1,38 @@
-application: tetrahedron-sol-117
 version: 1
 runtime: python27
 api_version: 1
 threadsafe: true
 
 handlers:
-- url: /.*
-  static_dir: index.html
+- url: /about-us
+  static_dir: about-us
+
+- url: /contributers
+  static_dir: contributers
 
 - url: /css
   static_dir: css
 
+- url: /images
+  static_dir: images
+
+- url: /js
+  static_dir: ./js
+
+- url: /projects
+  static_dir: projects
+
+- url: /tsol-header
+  static_dir: tsol-header
+
 - url: /vendor
   static_dir: vendor
 
-- url: /js
-  static_dir: js
+- url: /.*
+  script: app.app
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest

@@ -8,7 +8,9 @@
 
   function themes($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-      .primaryPalette('red')
+      .primaryPalette('grey', {
+        default: '100'
+      })
       .accentPalette('red')
       .warnPalette('red')
       .backgroundPalette('grey');
